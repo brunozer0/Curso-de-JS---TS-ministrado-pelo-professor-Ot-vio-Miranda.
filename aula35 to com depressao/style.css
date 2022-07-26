@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+body { 
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    margin-top: 5rem;
+    display: flex;
+}
+.container {
+    max-width: 64rem; 
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    
+}
+p.relogio {
+    font-size: 4rem;
+}
+.pausado {
+    color: red;
+}

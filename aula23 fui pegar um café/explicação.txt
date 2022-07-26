@@ -1,0 +1,39 @@
+- iniciei o meu código pegando o selector do formulário,
+
+- logo em seguida, utilizei eventListener para capturar o submit do botão enviar,
+
+- previni que os dados dos formularios fossem enviados com a funcão e.eventDefault
+
+- após isto, criei duas variáveis para capturar os inputs de peso e altura, do formulário
+
+- utilizei o operador de condição IF, para checar os dados que forem diferentes de números e retornar 'invalido' caso não seja 
+ 
+- utilizei uma variável intutulada 'getImc' que recebe uma função 'getIMC' que calculará peso/altura
+
+-utilizei a uma variável intitulada 'nivelIMC' que recebe a função que descobre qual o seu nível de imc
+
+- utilizei uma variável 'msg' que imprimira a mensagem do 'imc' e qual o 'nivelIMC' da pessoa
+
+- setei o resultado para que ele ative a classe msg
+
+-criei a função que rece os arrays sobre nivel de imc 
+
+
+- criei os ifs, checando de trás para frente (do maior para o menor) porque a medida em que a função encontrar a palavra return, ela para de executar o codigo
+
+-criei a função que ira receber a formula q calcula o seu imc 
+
+- criei uma função que cria um parágrafo
+
+- criei a função que seta o resultado, recebe uma 'msg' e se o resultado 'isvalid'. Dentro dela selecionei a div de resultados 
+
+- limpo o campo de resultados 
+
+- crio o Paragrafo
+
+- crio uma if para verificar se o 'isvalid' é verdadeiro, se for, ele ira adicionar o paragrafo-resultado. E se for falso
+ele adiciona a class bad
+
+-por fim, seto o o html do paragrafo com a mensagem recebida 
+
+-e adiciono ao resultado o filho (p) que eu criei
