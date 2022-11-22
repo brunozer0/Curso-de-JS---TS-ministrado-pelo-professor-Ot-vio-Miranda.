@@ -22,7 +22,7 @@ export default class Login {
                 alert('Email inválido')
                 error= true;
              }
-             if(!passwordInput.value.length < 6 || passwordInput.value.length > 12 )  {
+             if(passwordInput.value.length < 6 || passwordInput.value.length > 12 )  {
                 alert('Senha precisa ter entre 6 e 12 caracteres')
                 error= true;
             }
