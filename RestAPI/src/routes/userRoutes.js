@@ -1,13 +1,19 @@
 import { Router } from 'express';
 import UserController from '../controllers/UserController';
+import loginRequired from '../middlewares/loginRequired';
 
 const router = new Router();
 
-router.post('/', UserController.store);
-router.get('/', UserController.index);
-router.get('/:id', UserController.show);
-router.put('/:id', UserController.update);
-router.delete('/:id', UserController.delete);
+// -> Não deveria existir, a não ser que seja requisitado perfil do usuário
+
+// router.get('/:id', UserController.show);
+// router.get('/', loginRequired, UserController.index); // lista usuário
+
+router.post('/', UserController.store); // LISTA DE USUÁRIOS
+
+router.put('/', loginRequired, UserController.update); // utilizando token de autenticação
+
+router.delete('/', loginRequired, UserController.delete);
 
 export default router;
 
