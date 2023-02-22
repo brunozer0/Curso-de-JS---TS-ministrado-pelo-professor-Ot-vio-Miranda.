@@ -9,7 +9,7 @@ const router = new Router();
 // router.get('/:id', UserController.show);
 // router.get('/', loginRequired, UserController.index); // lista usuário
 
-router.post('/', UserController.store); // LISTA DE USUÁRIOS
+router.post('/', loginRequired, UserController.store); // LISTA DE USUÁRIOS
 
 router.put('/', loginRequired, UserController.update); // utilizando token de autenticação
 
