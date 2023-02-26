@@ -28,7 +28,6 @@ module.exports = {
     'react/forbid-prop-types': 0,
     'import/no-duplicates': 0,
     'no-console': 0,
-    'class-methods-use-this': 0,
-
+    'import/no-extraneous-dependencies': 0,
   },
 };
